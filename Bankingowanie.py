@@ -28,3 +28,4 @@ while True:
         break
     else:
         print("Podałeś niewłaściwy numer")
+

@@ -10,8 +10,8 @@ def wprowadzNowyKredyt():
         kontynuowac = input("Czy chcesz kontynuować? 1. TAK / 2. NIE\n")
         with open("kredyty.json", "w") as plik:
             json.dump(nazwaBanku, plik)
-        if kontynuowac == "1":
-            continue
+        if kontynuowac != "1":
+            break
         elif kontynuowac == "2":
             break
         else:

@@ -1,5 +1,4 @@
-import json
-from Kredyty import kredyty
+import podgladWydatkow
 from KreatorMiesiaca import kreatorMiesiaca
 
 def menu():
@@ -11,9 +10,7 @@ def menu():
         if wybor == 1:
             kreatorMiesiaca.kreatorMiesiaca()
         elif wybor == 2:
-            with open("ZapisanePliki/Styczeń2024.json", "r", encoding="utf-8") as plik:
-                dane_z_pliku = json.load(plik)
-            print(dane_z_pliku)
+            podgladWydatkow.podgladWydatkow()
         elif wybor == 3:
             print("Dziękuje za skorzystanie z programu")
             break

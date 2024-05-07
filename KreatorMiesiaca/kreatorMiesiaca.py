@@ -23,6 +23,7 @@ def kreatorMiesiaca():
         elif czyChceszKontynowac.upper() == "NIE":
             print("Koniec dodawania wydatków.")
             break
+    
 
     nazwaPlikuZapis = wyborMiesiacaRozliczenia + wyborRokRozliczeniowy
     sciezkaZapisuPliku = "ZapisanePliki/" + nazwaPlikuZapis + ".json"
